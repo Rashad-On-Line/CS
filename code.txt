@@ -1,0 +1,68 @@
+#include <stdio.h>
+#include <unistd.h>
+
+
+//int, char, float - primitive data
+//enum days{SUN, MON, TUE, WED, THU, FRI, SAT};
+//typedef enum {false, true}bool;
+
+
+
+
+
+
+void out(int choice)
+{
+    switch (choice)
+        {
+                case 1:
+                        printf("Sunday");
+                        break;
+                case 2:
+                        printf("Monday");
+                        break;
+                case 3:
+                        printf("Tuesday");
+                        break;
+                case 4:
+                        printf("Wednesday");
+                        break;
+                case 5:
+                        printf("Thursday");
+                        break;
+                case 6:
+                        printf("Friday");
+                        break;
+                 case 7:
+                        printf("Saturday");
+                        break;
+                default:
+                        printf("Invalid input");
+        }
+}
+void choice()
+{
+        printf("\n");
+        printf("Press 1 for Sunday   \n");
+        printf("Press 2 for Monday   \n");
+        printf("Press 3 for Tuesday  \n");
+        printf("Press 4 for Wednesday\n");
+        printf("Press 5 for Thursday \n");
+        printf("Press 6 for Friday   \n");
+        printf("Press 7 for Saturday \n");
+        printf("\n");
+}
+
+int main()
+{
+
+        int c;
+        choice();
+
+        printf("Enter yout choice : ");
+        scanf("%d", &c);
+
+        out(c);
+        return 0;
+
+}
